@@ -1,0 +1,21 @@
+{
+  "spanish": [
+    {"expected": "Hola", "got": "Hola", "mode": "spoken_target", "correct": true},
+    {"expected": "Hola", "got": "Ola", "mode": "spoken_target", "correct": true, "note": "accent-stripped match"},
+    {"expected": "Buenos días", "got": "buenos dias", "mode": "spoken_target", "correct": true},
+    {"expected": "Buenos días", "got": "buenas dias", "mode": "spoken_target", "correct": false, "error_type": "gender"},
+    {"expected": "Quisiera un café, por favor", "got": "Quiero un café por favor", "mode": "spoken_target", "correct": true, "note": "paraphrase acceptable"},
+    {"expected": "siete", "got": "siete", "mode": "translation_en_to_es", "correct": true},
+    {"expected": "siete", "got": "ocho", "mode": "translation_en_to_es", "correct": false, "error_type": "vocab"},
+    {"expected": "twelve", "got": "twelve", "mode": "translation_es_to_en", "correct": true},
+    {"expected": "I am hungry", "got": "I'm hungry", "mode": "translation_es_to_en", "correct": true},
+    {"expected": "La cuenta, por favor", "got": "El cuenta por favor", "mode": "spoken_target", "correct": false, "error_type": "gender"}
+  ],
+  "hindi": [
+    {"expected": "नमस्ते", "got": "namaste", "mode": "spoken_target", "correct": true, "note": "romanized accepted via LLM judge"},
+    {"expected": "आप कैसे हैं?", "got": "aap kaise hain", "mode": "spoken_target", "correct": true},
+    {"expected": "धन्यवाद", "got": "dhanyavad", "mode": "spoken_target", "correct": true},
+    {"expected": "पंद्रह", "got": "pandrah", "mode": "spoken_target", "correct": true},
+    {"expected": "मुझे एक कॉफ़ी चाहिए", "got": "main coffee chahiye", "mode": "spoken_target", "correct": false, "error_type": "verb_form"}
+  ]
+}
