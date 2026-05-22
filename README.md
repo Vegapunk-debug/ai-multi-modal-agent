@@ -319,12 +319,6 @@ Edge TTS (Microsoft, free, no-key) is wired as fallback but Deepgram Aura-2 is d
 
 ---
 
-## 🔬 Build with AI
-
-This project was built with **Claude Code** as engineering assistant. Architecture decisions, library choices, debugging, and grader algorithm — all reviewed line-by-line. Every line in this repo is defensible.
-
----
-
 ## 📜 License
 
 MIT — fork freely.

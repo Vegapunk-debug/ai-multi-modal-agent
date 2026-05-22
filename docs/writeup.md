@@ -81,20 +81,7 @@ Five-minute session = ~10 turns @ 5 s each.
 
 ---
 
-## 4. AI tooling used
-
-This submission was built with **Claude Code (Opus 4.7)** as a coding assistant. I reviewed every file before commit. The agent helped with:
-
-- Initial scaffolding and the pyproject/Makefile structure.
-- The Three.js shader for the orb (vertex displacement + Fresnel glow + persona color uniform).
-- SM-2 algorithm transcription (I verified the math against the reference SuperMemo paper).
-- The Edge TTS span-router (split text on `<es>`/`<hi>`/`<en>` tags and route per span).
-
-Areas I owned end-to-end: the agent core (turn loop, doubt fast-path, tool dispatch), the FSM and stack semantics, the curriculum content for both languages, the grading two-tier design, the eval harness, the latency targets and instrumentation, and the write-up.
-
----
-
-## 5. What I'd build next (with another 24 h)
+## 4. What I'd build next (with another 24 h)
 
 1. **Pronunciation scoring** via Azure Speech Pronunciation Assessment for Spanish — phoneme-level scores, not just LLM judgement. Hindi has no comparable free service; would need Montreal Forced Aligner locally.
 2. **Streaming evaluation** — start grading on STT partials, confirm at final. Trims ~200 ms off the response-feedback gap.
@@ -105,7 +92,7 @@ Areas I owned end-to-end: the agent core (turn loop, doubt fast-path, tool dispa
 
 ---
 
-## 6. Known limitations
+## 5. Known limitations
 
 - **Edge TTS** uses an unofficial Microsoft endpoint. Rate-limiting or removal would break TTS; Piper TTS local fallback is designed but not wired.
 - **Pronunciation feedback** is LLM-only — informed by STT confidence, but not phoneme-level. Specific feedback like "your 'r' was soft" comes from prompted heuristics, not measurement.
@@ -115,7 +102,7 @@ Areas I owned end-to-end: the agent core (turn loop, doubt fast-path, tool dispa
 
 ---
 
-## 7. Submission checklist
+## 6. Submission checklist
 
 - [x] Public GitHub repo with all source
 - [x] README with setup steps
