@@ -1,0 +1,196 @@
+{
+  "language": "spanish",
+  "lessons": [
+    {
+      "id": "es_greetings",
+      "title": "Saludos — Greetings",
+      "level": "A1",
+      "objective": "Greet someone, say goodbye, and ask how they are in Spanish.",
+      "vocab": [
+        {"target": "Hola", "english": "Hello", "ipa": "ˈo.la"},
+        {"target": "Buenos días", "english": "Good morning"},
+        {"target": "Buenas tardes", "english": "Good afternoon"},
+        {"target": "Buenas noches", "english": "Good night/evening"},
+        {"target": "¿Cómo estás?", "english": "How are you? (informal)"},
+        {"target": "¿Cómo está usted?", "english": "How are you? (formal)"},
+        {"target": "Bien, gracias", "english": "Well, thank you"},
+        {"target": "Adiós", "english": "Goodbye"},
+        {"target": "Hasta luego", "english": "See you later"}
+      ],
+      "grammar_notes": [
+        "Use 'tú' (informal) with friends; 'usted' (formal) with elders/strangers.",
+        "Spanish 'h' is always silent."
+      ],
+      "steps": [
+        {"type": "explain", "say": "<en>Today we learn Spanish greetings. The most common is</en> <es>Hola</es>. <en>It means hello.</en>"},
+        {"type": "example", "say": "<en>For morning,</en> <es>Buenos días</es>. <en>For afternoon,</en> <es>Buenas tardes</es>. <en>For evening,</en> <es>Buenas noches</es>."},
+        {"type": "practice", "prompt": "Say good morning in Spanish.", "expected": "Buenos días", "mode": "spoken_target"},
+        {"type": "explain", "say": "<en>To ask how someone is, informally</en> <es>¿Cómo estás?</es> <en>Formally,</en> <es>¿Cómo está usted?</es>"},
+        {"type": "practice", "prompt": "Ask your teacher how they are, formally.", "expected": "¿Cómo está usted?", "mode": "spoken_target"},
+        {"type": "explain", "say": "<en>The simplest reply is</en> <es>Bien, gracias</es>."},
+        {"type": "practice", "prompt": "Reply that you are well, thanks.", "expected": "Bien, gracias", "mode": "spoken_target"},
+        {"type": "check", "prompt": "How do you say see you later?", "expected": "Hasta luego", "mode": "translation_en_to_es"}
+      ]
+    },
+    {
+      "id": "es_numbers",
+      "title": "Los números — Numbers 1 to 20",
+      "level": "A1",
+      "objective": "Count from 1 to 20 in Spanish.",
+      "vocab": [
+        {"target": "uno", "english": "one"}, {"target": "dos", "english": "two"},
+        {"target": "tres", "english": "three"}, {"target": "cuatro", "english": "four"},
+        {"target": "cinco", "english": "five"}, {"target": "seis", "english": "six"},
+        {"target": "siete", "english": "seven"}, {"target": "ocho", "english": "eight"},
+        {"target": "nueve", "english": "nine"}, {"target": "diez", "english": "ten"},
+        {"target": "once", "english": "eleven"}, {"target": "doce", "english": "twelve"},
+        {"target": "trece", "english": "thirteen"}, {"target": "catorce", "english": "fourteen"},
+        {"target": "quince", "english": "fifteen"}, {"target": "dieciséis", "english": "sixteen"},
+        {"target": "diecisiete", "english": "seventeen"}, {"target": "dieciocho", "english": "eighteen"},
+        {"target": "diecinueve", "english": "nineteen"}, {"target": "veinte", "english": "twenty"}
+      ],
+      "grammar_notes": [
+        "16-19 are compound words: 'dieciséis' = diez y seis shortened.",
+        "'uno' shortens to 'un' before masculine nouns."
+      ],
+      "steps": [
+        {"type": "explain", "say": "<en>Let's count to five.</en> <es>Uno, dos, tres, cuatro, cinco</es>."},
+        {"type": "practice", "prompt": "Count from one to five.", "expected": "uno dos tres cuatro cinco", "mode": "spoken_target"},
+        {"type": "explain", "say": "<en>Six to ten.</en> <es>Seis, siete, ocho, nueve, diez</es>."},
+        {"type": "explain", "say": "<en>Eleven through fifteen are unique.</en> <es>Once, doce, trece, catorce, quince</es>."},
+        {"type": "practice", "prompt": "Say fifteen in Spanish.", "expected": "quince", "mode": "spoken_target"},
+        {"type": "practice", "prompt": "Say eighteen in Spanish.", "expected": "dieciocho", "mode": "spoken_target"},
+        {"type": "check", "prompt": "What does doce mean?", "expected": "twelve", "mode": "translation_es_to_en"}
+      ]
+    },
+    {
+      "id": "es_ordering_food",
+      "title": "Pedir comida — Ordering food",
+      "level": "A2",
+      "objective": "Order food and drink politely at a Spanish-speaking restaurant.",
+      "vocab": [
+        {"target": "Quisiera", "english": "I would like (polite)"},
+        {"target": "un café", "english": "a coffee"},
+        {"target": "un té", "english": "a tea"},
+        {"target": "agua", "english": "water"},
+        {"target": "el menú", "english": "the menu"},
+        {"target": "por favor", "english": "please"},
+        {"target": "gracias", "english": "thank you"},
+        {"target": "la cuenta", "english": "the bill"},
+        {"target": "una mesa para dos", "english": "a table for two"},
+        {"target": "tengo hambre", "english": "I am hungry"},
+        {"target": "tengo sed", "english": "I am thirsty"}
+      ],
+      "grammar_notes": [
+        "'Quisiera' is the polite conditional of 'querer'.",
+        "Articles agree with gender: 'el café' (masc), 'la cuenta' (fem).",
+        "Spanish: 'tengo hambre' = literally 'I have hunger'."
+      ],
+      "steps": [
+        {"type": "explain", "say": "<en>To order politely, start with</en> <es>Quisiera</es>. <en>It means 'I would like'.</en>"},
+        {"type": "example", "say": "<en>For example:</en> <es>Quisiera un café, por favor</es>."},
+        {"type": "practice", "prompt": "Order a tea, politely.", "expected": "Quisiera un té, por favor", "mode": "spoken_target"},
+        {"type": "explain", "say": "<en>For the bill, say</en> <es>La cuenta, por favor</es>."},
+        {"type": "practice", "prompt": "Ask for the bill.", "expected": "La cuenta, por favor", "mode": "spoken_target"},
+        {"type": "check", "prompt": "Translate: 'Tengo hambre'.", "expected": "I am hungry", "mode": "translation_es_to_en"}
+      ]
+    },
+    {
+      "id": "es_family",
+      "title": "La familia — Family",
+      "level": "A1",
+      "objective": "Talk about family members and relationships in Spanish.",
+      "vocab": [
+        {"target": "la familia", "english": "the family"},
+        {"target": "el padre", "english": "the father"},
+        {"target": "la madre", "english": "the mother"},
+        {"target": "el hermano", "english": "the brother"},
+        {"target": "la hermana", "english": "the sister"},
+        {"target": "el hijo", "english": "the son"},
+        {"target": "la hija", "english": "the daughter"},
+        {"target": "el abuelo", "english": "the grandfather"},
+        {"target": "la abuela", "english": "the grandmother"},
+        {"target": "Tengo dos hermanos", "english": "I have two brothers"},
+        {"target": "Mi madre se llama Ana", "english": "My mother is called Ana"}
+      ],
+      "grammar_notes": [
+        "Family terms use gendered articles: 'el' for masculine, 'la' for feminine.",
+        "'Tener' (to have) is used for relationships: 'Tengo dos hermanos' = 'I have two brothers'.",
+        "'Llamarse' (to be called) for names."
+      ],
+      "steps": [
+        {"type": "explain", "say": "<en>Family members use gendered articles.</en> <es>El padre</es> <en>is father,</en> <es>la madre</es> <en>is mother.</en>"},
+        {"type": "example", "say": "<en>Siblings:</en> <es>El hermano</es> <en>brother,</en> <es>la hermana</es> <en>sister.</en>"},
+        {"type": "practice", "prompt": "Say grandmother in Spanish.", "expected": "la abuela", "mode": "spoken_target"},
+        {"type": "explain", "say": "<en>To talk about how many siblings, say</en> <es>Tengo dos hermanos</es>. <en>That's 'I have two brothers'.</en>"},
+        {"type": "practice", "prompt": "Say 'I have one sister' in Spanish.", "expected": "Tengo una hermana", "mode": "spoken_target"},
+        {"type": "check", "prompt": "What does 'mi madre' mean?", "expected": "my mother", "mode": "translation_es_to_en"}
+      ]
+    },
+    {
+      "id": "es_days_time",
+      "title": "Días y hora — Days and Time",
+      "level": "A2",
+      "objective": "Name days of the week and tell time in Spanish.",
+      "vocab": [
+        {"target": "lunes", "english": "Monday"},
+        {"target": "martes", "english": "Tuesday"},
+        {"target": "miércoles", "english": "Wednesday"},
+        {"target": "jueves", "english": "Thursday"},
+        {"target": "viernes", "english": "Friday"},
+        {"target": "sábado", "english": "Saturday"},
+        {"target": "domingo", "english": "Sunday"},
+        {"target": "hoy", "english": "today"},
+        {"target": "mañana", "english": "tomorrow"},
+        {"target": "ayer", "english": "yesterday"},
+        {"target": "¿Qué hora es?", "english": "What time is it?"},
+        {"target": "Son las tres", "english": "It is three o'clock"}
+      ],
+      "grammar_notes": [
+        "Days of the week are NOT capitalized in Spanish.",
+        "For time, use 'Son las' + number for 2 o'clock and after; 'Es la una' for one o'clock.",
+        "'mañana' means both 'morning' and 'tomorrow' — context decides."
+      ],
+      "steps": [
+        {"type": "explain", "say": "<en>Days of the week start lowercase in Spanish.</en> <es>Lunes, martes, miércoles, jueves, viernes</es>."},
+        {"type": "example", "say": "<en>Weekend:</en> <es>Sábado y domingo</es>."},
+        {"type": "practice", "prompt": "Say Wednesday in Spanish.", "expected": "miércoles", "mode": "spoken_target"},
+        {"type": "explain", "say": "<en>To ask the time, say</en> <es>¿Qué hora es?</es> <en>To answer at three:</en> <es>Son las tres</es>."},
+        {"type": "practice", "prompt": "Ask what time it is.", "expected": "¿Qué hora es?", "mode": "spoken_target"},
+        {"type": "check", "prompt": "What does 'mañana' mean?", "expected": "tomorrow", "mode": "translation_es_to_en"}
+      ]
+    },
+    {
+      "id": "es_directions",
+      "title": "Direcciones — Directions",
+      "level": "A2",
+      "objective": "Ask for and understand basic directions in Spanish.",
+      "vocab": [
+        {"target": "¿Dónde está...?", "english": "Where is...?"},
+        {"target": "a la derecha", "english": "to the right"},
+        {"target": "a la izquierda", "english": "to the left"},
+        {"target": "todo recto", "english": "straight ahead"},
+        {"target": "cerca", "english": "near"},
+        {"target": "lejos", "english": "far"},
+        {"target": "el baño", "english": "the bathroom"},
+        {"target": "la estación", "english": "the station"},
+        {"target": "el hotel", "english": "the hotel"},
+        {"target": "gire a la derecha", "english": "turn right"},
+        {"target": "gracias por su ayuda", "english": "thanks for your help"}
+      ],
+      "grammar_notes": [
+        "'¿Dónde está...?' uses 'estar' (location), never 'ser'.",
+        "'gire' is formal command form of 'girar' (to turn).",
+        "Word-final 'd' in 'usted' is barely pronounced."
+      ],
+      "steps": [
+        {"type": "explain", "say": "<en>To ask where something is, say</en> <es>¿Dónde está...?</es>"},
+        {"type": "example", "say": "<en>Like:</en> <es>¿Dónde está el baño?</es> <en>That's 'where is the bathroom?'</en>"},
+        {"type": "practice", "prompt": "Ask where the hotel is.", "expected": "¿Dónde está el hotel?", "mode": "spoken_target"},
+        {"type": "explain", "say": "<en>Common answers:</en> <es>A la derecha</es> <en>is right,</en> <es>a la izquierda</es> <en>is left,</en> <es>todo recto</es> <en>is straight.</en>"},
+        {"type": "practice", "prompt": "Say to the right in Spanish.", "expected": "a la derecha", "mode": "spoken_target"},
+        {"type": "check", "prompt": "What does 'cerca' mean?", "expected": "near", "mode": "translation_es_to_en"}
+      ]
+    }
+  ]
+}

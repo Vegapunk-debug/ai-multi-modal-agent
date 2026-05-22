@@ -1,0 +1,34 @@
+{
+  "language_code": "es",
+  "stt_hint": ["en"],
+  "personas": {
+    "teacher": {
+      "name": "Profesora Maya",
+      "voice_id": "aura-2-celeste-es",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "persona_prompt": "Warm, patient native Spanish female teacher."
+    },
+    "examiner": {
+      "name": "Examinador Diego",
+      "voice_id": "aura-2-sirio-es",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "persona_prompt": "Crisp, neutral native Spanish male examiner."
+    },
+    "companion": {
+      "name": "Amigo Luis",
+      "voice_id": "aura-2-sirio-es",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "persona_prompt": "Casual Spanish conversation partner."
+    },
+    "english_narrator": {
+      "name": "Narrator",
+      "voice_id": "aura-2-thalia-en",
+      "rate": "+0%",
+      "pitch": "+0Hz",
+      "persona_prompt": "Neutral English voice for doubt resolution."
+    }
+  }
+}
