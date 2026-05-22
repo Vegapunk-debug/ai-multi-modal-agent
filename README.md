@@ -18,7 +18,7 @@ Voice-native language tutor — lessons, quizzes, roleplay, and on-the-fly doubt
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 > _Add screenshots in `docs/screenshots/` and reference them here._
 
@@ -28,7 +28,7 @@ Voice-native language tutor — lessons, quizzes, roleplay, and on-the-fly doubt
 
 ---
 
-## 🚀 Quickstart — 5 minutes from clone to running
+## Quickstart — 5 minutes from clone to running
 
 ### Prereqs
 
@@ -95,7 +95,7 @@ Open **http://localhost:3001** → click **Begin session** → grant mic → say
 
 ---
 
-## ✨ What you get
+## What you get
 
 ### Four learning modes, all voice-entered
 
@@ -119,7 +119,7 @@ Live latency at `GET /metrics` (P50/P95/max/mean per stage, 200-sample rolling w
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────┐
@@ -169,7 +169,7 @@ Full diagrams (sequence, barge-in, FSM, ER) in `docs/architecture.md`.
 
 ---
 
-## 🎯 Spec compliance
+## Spec compliance
 
 | Requirement (assignment brief) | Status |
 |--------------------------------|--------|
@@ -200,7 +200,7 @@ Full diagrams (sequence, barge-in, FSM, ER) in `docs/architecture.md`.
 | Crash resilience | ✅ try/except + retry chains |
 | Cost estimated | ✅ ~$0.04/5-min session (all free tier in practice) |
 
-### Bonus / stretch goals
+### Bonus/stretch goals
 
 | Bonus | Status |
 |-------|--------|
@@ -214,7 +214,7 @@ Full diagrams (sequence, barge-in, FSM, ER) in `docs/architecture.md`.
 
 ---
 
-## 🧪 Tests
+## Tests
 
 ```bash
 .venv/bin/pytest evals/ -v
@@ -230,7 +230,7 @@ Full diagrams (sequence, barge-in, FSM, ER) in `docs/architecture.md`.
 
 ---
 
-## 💸 Cost per session
+## Cost per session
 
 5-minute session estimate:
 
@@ -244,7 +244,7 @@ Full diagrams (sequence, barge-in, FSM, ER) in `docs/architecture.md`.
 
 ---
 
-## 📂 Project layout
+## Project layout
 
 ```
 lingua/
@@ -290,7 +290,7 @@ lingua/
 
 ---
 
-## 🛠 Configuration (.env)
+## Configuration (.env)
 
 | Var | Purpose | Default |
 |-----|---------|---------|
@@ -308,7 +308,7 @@ Edge TTS (Microsoft, free, no-key) is wired as fallback but Deepgram Aura-2 is d
 
 ---
 
-## 🚨 Known limitations
+## Known limitations
 
 - **Speaker → mic echo** can trigger false barge-ins. Mitigated via mic gate + Silero VAD threshold tuning. **Use headphones** for best experience.
 - **Spanish-only.** Multilingual scaffolding exists (`server/curriculum/<lang>/`) — adding French = new JSON, no code change.
@@ -319,7 +319,7 @@ Edge TTS (Microsoft, free, no-key) is wired as fallback but Deepgram Aura-2 is d
 
 ---
 
-## 📜 License
+## License
 
 MIT — fork freely.
 
