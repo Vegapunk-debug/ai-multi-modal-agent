@@ -1,0 +1,54 @@
+flowchart TB
+    subgraph Browser["Browser (Next.js + Three.js)"]
+        UI["Cinematic UI\n• audio-reactive orb\n• transcript ribbon\n• lesson card\n• insights panel"]
+        Mic["MicCapture\n48k → PCM-16 @ 16k\n+ client-side VAD"]
+        Player["AudioPlayer\nMediaSource MP3\n+ AnalyserNode amp"]
+    end
+
+    WS{{"WebSocket\n/ws/audio"}}
+
+    subgraph Server["FastAPI Server"]
+        Pipeline["Pipeline\nasyncio session manager\n+ barge-in cancellation"]
+
+        subgraph Agent["Agent Core"]
+            FSM["FSM\nidle | teaching | quiz\n| conversation | doubt\n+ state stack"]
+            LLM["LLM\nGroq Llama 3.3 70B\n(Gemini fallback)\nstreaming + tools"]
+            Tools["Tools\nstart_lesson, advance_step\nstart_quiz, grade_answer\nlookup_vocab, transition_to\nhandle_doubt, end_session"]
+            Grader["Grader\nfast: normalize + fuzzy\nLLM-judge fallback"]
+            Doubt["Doubt Handler\nkeyword pre-filter\n+ EN answer + resume"]
+        end
+
+        STT["Deepgram Nova-3\nstreaming\nlanguage=multi\nendpointing 300ms"]
+        TTS["Edge TTS\nstreaming MP3\nper-persona voices\nlang-tagged spans"]
+        Trace["Tracer\nJSONL per turn\nP50/P95 metrics"]
+    end
+
+    subgraph Memory["Memory"]
+        Session["Session State\nintroduced vocab\nrecent mistakes"]
+        SQLite[("SQLite\nusers / sessions\nlesson_progress\nvocab_mastery SM-2\nmistakes")]
+    end
+
+    subgraph Curriculum["Curriculum (JSON)"]
+        ES["Spanish\n3 lessons\n3 personas"]
+        HI["Hindi\n3 lessons\n3 personas"]
+    end
+
+    UI <--> Mic
+    UI <--> Player
+    Mic --> WS
+    WS --> Player
+    WS <--> Pipeline
+    Pipeline --> STT
+    STT --> Pipeline
+    Pipeline --> Agent
+    Agent --> FSM
+    Agent --> LLM
+    LLM --> Tools
+    Tools --> Grader
+    Tools --> Doubt
+    Agent --> Memory
+    Pipeline --> TTS
+    Pipeline --> Trace
+    Curriculum -.system prompt + lessons + voices.-> Agent
+    Memory --> SQLite
+    Memory --> Session
