@@ -20,11 +20,9 @@ Voice-native language tutor — lessons, quizzes, roleplay, and on-the-fly doubt
 
 ## Screenshots
 
-> _Add screenshots in `docs/screenshots/` and reference them here._
-
 | Idle / ready | Speaking | Lesson + transcript |
 |--------------|----------|---------------------|
-| _orb.png_    | _speaking.png_ | _lesson.png_ |
+| ![Idle / ready](docs/screenshots/orb.png) | ![Speaking](docs/screenshots/speaking.png) | ![Lesson + transcript](docs/screenshots/lesson.png) |
 
 ---
 
