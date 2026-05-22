@@ -14,6 +14,8 @@ dependencies = [
     "websockets>=13.0",
     "httpx>=0.27.0",
     "rapidfuzz>=3.10.0",
+    "pipecat-ai[openai,deepgram,cartesia,silero,webrtc]>=1.0.0",
+    "loguru>=0.7.0",
 ]
 
 [project.optional-dependencies]
