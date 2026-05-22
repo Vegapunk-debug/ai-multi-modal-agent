@@ -325,4 +325,4 @@ MIT — fork freely.
 
 ---
 
-Built for the **AI Engineer Take-Home Assignment** — voice / multi-modal agents. Architecture diagrams + write-up in [`docs/`](docs/).
+# THANK YOU
